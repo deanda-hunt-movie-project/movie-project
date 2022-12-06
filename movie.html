@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid blue;
+            border-right: 16px solid green;
+            border-bottom: 16px solid red;
+            border-left: 16px solid pink;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+    <title>Project</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    <!-- https://ionic.io/ionicons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- TODO Add a dark mode theme  -->
+<header id="header">
+    <figure><a href="#">Logo</a></figure>
+    <nav class="navbar_cont">
+        <ul class="navbar_ul">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu_cont" id="menu-cont">
+        <div class="menu-streak" id="ms1"></div>
+        <div class="menu-streak" id="ms2"></div>
+        <div class="menu-streak" id="ms3"></div>
+    </div>
+</header>
+<!--    Search bar-->
+<form id="search">
+    <input type="text" class="form-control" id="search-coffee" placeholder="Search Your Favorite Movies Here!">
+    <button type="submit" id="btn"></button>
+</form>
+
+<form id="new-movie">
+    <input type="text" class="form-control" id="input-movie" placeholder="What is the name of the movie?">
+    <button type="submit" id="btn-1"></button>
+</form>
+
+<!-- TODO Make a responsive hero section, I need my linkedIn profile pic and the Iphone img asset  -->
+<main id="main w-100 h-100">
+    <section class="hero container debug-ol">
+
+
+
+
+
+
+
+
+    </section>
+</main>
+
+<section class="projects">
+
+</section>
+
+
+
+
+<footer class="footer d-flex justify-content-between flex-column gap-4">
+    <div class=" w-100 d-flex justify-content-between align-items-center">
+
+        <nav class="footer-mission-cont">
+            <h3>Mission Statement Title</h3>
+            <p>mission Statement</p>
+        </nav>
+
+        <nav class="footer-links-cont w-50
+            d-flex
+            justify-content-center
+            align-items-start
+            flex-wrap gap-4">
+
+            <div class="about
+                link-box d-flex
+                justify-content-between
+                align-items-center
+                flex-column gap-3">
+                <h3>About</h3>
+                <p>features</p>
+                <p>News & Blog</p>
+            </div>
+
+            <div class="company
+                 link-box
+                 d-flex
+                 justify-content-between
+                 align-items-center
+                 flex-column gap-3">
+
+                <h3>Company</h3>
+                <p>How we Work</p>
+                <p>Capital</p>
+                <p>Security</p>
+            </div>
+
+            <div class="support
+                link-box d-flex
+                justify-content-between
+                align-items-center
+                flex-column gap-3">
+                <h3>Support</h3>
+                <p>FAQs</p>
+                <p>Support Center</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="social
+                link-box d-flex
+                justify-content-between
+                align-items-center
+                flex-column
+                gap-3">
+                <h3>Follow Us</h3>
+                <div class="w-100 d-flex justify-content-between align-items-center icons">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="footer-legal-cont">
+        <div>
+            <p>© Herbert R Holder. All rigths reserved</p>
+        </div>
+        <div>
+            <p>Terms & Agreements</p>
+            <p>Privacy Policy</p>
+        </div>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script src="keys.js"></script>
+<script src="js/api.js"></script>
+<script src="js/header.js"></script>
+<script src="moviejs.js"></script>
+
+
+
+</head>
+<body>
+
+<h2>Loading</h2>
+
+<div class="loader"></div>
+
+</body>
+</html>
