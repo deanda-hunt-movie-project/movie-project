@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -41,45 +41,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
+<body>
 <!-- TODO Add a dark mode theme  -->
-<header id="header">
-    <figure><a href="#">Logo</a></figure>
-    <nav class="navbar_cont">
-        <ul class="navbar_ul">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Knowledge Base</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<!--<header id="header">-->
+<!--    <figure><a href="#">Logo</a></figure>-->
+<!--    <nav class="navbar_cont">-->
+<!--        <ul class="navbar_ul">-->
+<!--            <li><a href="#">About Me</a></li>-->
+<!--            <li><a href="#">Knowledge Base</a></li>-->
+<!--            <li><a href="#">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
 
-    <div class="menu_cont" id="menu-cont">
-        <div class="menu-streak" id="ms1"></div>
-        <div class="menu-streak" id="ms2"></div>
-        <div class="menu-streak" id="ms3"></div>
+<!--    <div class="menu_cont" id="menu-cont">-->
+<!--        <div class="menu-streak" id="ms1"></div>-->
+<!--        <div class="menu-streak" id="ms2"></div>-->
+<!--        <div class="menu-streak" id="ms3"></div>-->
+<!--    </div>-->
+<!--</header>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">DeAnda and Hunt Movie Database</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" id="homeRefresh" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown" id="dropdownOption">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Add Movie</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <div class="formContent">
+                                <label for="addTitle">Title:</label>
+                                <input type="text" id="addTitle">
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <div class="formContent">
+                                <label for="addRating">Rating:</label>
+                                <input type="text" id="addRating">
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <div class="formContent">
+                                <label for="addGenre">Genre:</label>
+                                <input type="text" id="addGenre">
+                            </div>
+                        </li>
+                        <li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <div class="formContent">
+                                <label for="addDirector">Director:</label>
+                                <input type="text" id="addDirector">
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    </ul>
+                    <button type="button" id="saveButton" class="btn btn-primary">Save</button>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" id="searchInput" type="search" placeholder="Search"
+                       aria-label="Search">
+                <button class="btn btn-outline-dark" id="searchButton" type="submit">Search</button>
+            </form>
+        </div>
     </div>
-</header>
-<!--    Search bar-->
-<form id="search">
-    <input type="text" class="form-control" id="search-coffee" placeholder="Search Your Favorite Movies Here!">
-    <button type="submit" id="btn"></button>
-</form>
+</nav>
 
-<form id="new-movie">
-    <input type="text" class="form-control" id="input-movie" placeholder="What is the name of the movie?">
-    <button type="submit" id="btn-1"></button>
-</form>
 
 <!-- TODO Make a responsive hero section, I need my linkedIn profile pic and the Iphone img asset  -->
 <main id="main w-100 h-100">
     <section class="hero container debug-ol">
-
-
-
-
-
-
-
 
     </section>
 </main>
@@ -88,85 +138,6 @@
 
 </section>
 
-
-
-
-<footer class="footer d-flex justify-content-between flex-column gap-4">
-    <div class=" w-100 d-flex justify-content-between align-items-center">
-
-        <nav class="footer-mission-cont">
-            <h3>Mission Statement Title</h3>
-            <p>mission Statement</p>
-        </nav>
-
-        <nav class="footer-links-cont w-50
-            d-flex
-            justify-content-center
-            align-items-start
-            flex-wrap gap-4">
-
-            <div class="about
-                link-box d-flex
-                justify-content-between
-                align-items-center
-                flex-column gap-3">
-                <h3>About</h3>
-                <p>features</p>
-                <p>News & Blog</p>
-            </div>
-
-            <div class="company
-                 link-box
-                 d-flex
-                 justify-content-between
-                 align-items-center
-                 flex-column gap-3">
-
-                <h3>Company</h3>
-                <p>How we Work</p>
-                <p>Capital</p>
-                <p>Security</p>
-            </div>
-
-            <div class="support
-                link-box d-flex
-                justify-content-between
-                align-items-center
-                flex-column gap-3">
-                <h3>Support</h3>
-                <p>FAQs</p>
-                <p>Support Center</p>
-                <p>Contact Us</p>
-            </div>
-
-            <div class="social
-                link-box d-flex
-                justify-content-between
-                align-items-center
-                flex-column
-                gap-3">
-                <h3>Follow Us</h3>
-                <div class="w-100 d-flex justify-content-between align-items-center icons">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-pinterest"></ion-icon>
-                </div>
-            </div>
-
-        </nav>
-
-    </div>
-
-    <div class="footer-legal-cont">
-        <div>
-            <p>© Team DeAnda-Hunt All rigths reserved</p>
-        </div>
-        <div>
-            <p>Terms & Agreements</p>
-            <p>Privacy Policy</p>
-        </div>
-    </div>
-</footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -177,13 +148,42 @@
 <script src="moviejs.js"></script>
 
 
-
-</head>
-<body>
-
 <h2>Loading</h2>
 
 <div class="loader"></div>
 
 </body>
+
+<footer class="footer">
+   <div class="container">
+      <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Services:</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Upcoming News</a></li>
+                    <li><a href="#">Upcoming News</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+                <h3>About Us:</h3>
+                <ul>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Future Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 item text">
+                <h3>DeAnda and Hunt Studios</h3>
+                <p>Write up would go here.</p>
+            </div>
+            <div class="col item social col-12 justify-content-center">
+                <a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a><br>
+
+            </div>
+        </div>
+       <p>DeAnda and Hunt studios©</p>
+    </div>
+</footer>
 </html>

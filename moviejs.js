@@ -7,6 +7,7 @@
 
 
 
+
     const getMovies = (search) => {
         search.preventDefault()
         // console.log(search.target[0].value)
