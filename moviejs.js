@@ -1,10 +1,10 @@
-const url = "https://www.round-walnut-snow.glitch.me"
+const url = "https://www.round-walnut-snow.glitch.me/movies"
 
 (function(){
     "use strict"
 
     const movieKey = MOVIE_API;
-    const url = "https://invented-fantastic-sense.glitch.me/movies"; //Paul's DB
+    // const url = "https://invented-fantastic-sense.glitch.me/movies"; //Paul's DB
 // const url = "https://vintage-sulky-aluminum.glitch.me/movies"; //Herb's DB
 
 
