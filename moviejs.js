@@ -1,12 +1,8 @@
-const url = "https://www.round-walnut-snow.glitch.me"
-
 (function(){
     "use strict"
 
-    const movieKey = MOVIE_API;
-    const url = "https://invented-fantastic-sense.glitch.me/movies"; //Paul's DB
-// const url = "https://vintage-sulky-aluminum.glitch.me/movies"; //Herb's DB
-
+    const movieKey = apikey;
+    const url = "https://www.round-walnut-snow.glitch.me";
 
 
 
@@ -16,8 +12,8 @@ const url = "https://www.round-walnut-snow.glitch.me"
         // console.log(search.target[0].value)
         // console.log('hello')
         fetch(`https://www.omdbapi.com?apikey=${movieKey}&s=${search.target[0].value}`)
-            .then(response => response.json())//then... return json
-            .then(function (data) { //then return data
+            .then(response => response.json())
+            .then(function (data) {
                 console.log('data', data);
 
                 let movie = data.Search;
