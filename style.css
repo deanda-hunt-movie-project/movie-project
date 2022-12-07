@@ -16,8 +16,6 @@ html {
 
 body {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
@@ -149,12 +147,11 @@ header {
 }
 /* End of media max-width 820px */
 .footer {
-  background-color: silver;
   padding: var(--footer-padding);
   width: 100%;
   min-height: 300px;
   margin-top: auto;
-  color: var(--font-color-1);
+  color: var(--font-color-2);
 }
 .footer-mission-cont {
   width: 200px;
@@ -197,10 +194,15 @@ header {
 /* For 2K & 4K resolutions */
 
 /*# sourceMappingURL=style.css.map */
-.poster{
-  height: 100%;
-  width: 100%;
-}
+/*.poster{*/
+/*  object-fit: cover;*/
+/*  height: 100vh;*/
+/*  width: 100vw;*/
+/*  !*position: fixed;*!*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  overflow: scroll;*/
+/*}*/
 h1{
   display: flex;
   justify-content: center;
@@ -209,8 +211,24 @@ h1{
 }
 
 .card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border: solid 2px black;
   background-color: silver;
+
 }
-.
+.container{
+  margin: 5em;
+}
+
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
