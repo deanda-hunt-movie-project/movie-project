@@ -10,8 +10,6 @@
 }
 
 html {
-  background: url("images/movie-poster.jpg") no-repeat;
-  position: absolute;
   height: 100%;
   width: 100%;
 }
@@ -209,4 +207,10 @@ h1{
   font-family: "Times New Roman", "sans-serif";
   font-weight: bold;
 }
+
+.card{
+  border: solid 2px black;
+  background-color: silver;
+}
+.
 
