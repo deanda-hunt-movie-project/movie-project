@@ -1,0 +1,37 @@
+
+.footer {
+    padding: var(--footer-padding);
+    width: 100%;
+    min-height: 300px;
+    background-color: #000000;
+    margin-top: auto;
+    color: var(--font-color-1);
+
+    &-mission-cont {
+        width: 200px;
+        min-height: fit-content;
+        margin-left: 1rem;
+    }
+    &-links-cont {
+        width: 600px;
+        min-height: fit-content;
+        .about,.social {
+            width: 107px;
+            height: 112px;
+        }
+        .social {
+            .icons {
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+        }
+    }
+    &-legal-cont {
+        width: 100%;
+        // margin: 100px 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
