@@ -66,12 +66,15 @@ let append = function (data) {
         html +=
             `<div class="container parent${i++}" id="parent${i++}">
                          <button type="button" class="btn-close remove-card" id="delete" onclick="deleteMovie(event);parentNode.remove()"></button> <br>
-                         <img src="${Poster}">
-                         <p>Movie name: ${Title}</p>
-                         <p>Movie Year: ${Year}</p>
+                         <div class="card" style="width: 25rem;">
+                         <img src="${Poster}" class="card-img-top" alt="${Poster}">
+                         <div class="card-body">
+                        <h5 class="card-title"><p>Movie Title: ${Title}</p></h5>
+                         <p>Year: ${Year}</p>
                          <p>Movie ID: ${imdbID}</p>
                          <p>Movie type: ${Type}</p>
-                         
+                         </div>
+                         </div>
                          </div>`;
 
     }
