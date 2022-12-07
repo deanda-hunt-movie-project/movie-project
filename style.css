@@ -10,7 +10,10 @@
 }
 
 html {
+  background: url("images/movie-poster.jpg") no-repeat;
+  position: absolute;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -196,3 +199,14 @@ header {
 /* For 2K & 4K resolutions */
 
 /*# sourceMappingURL=style.css.map */
+.poster{
+  height: 100%;
+  width: 100%;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman", "sans-serif";
+  font-weight: bold;
+}
+
