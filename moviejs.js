@@ -62,7 +62,7 @@ let append = function (data) {
     let html = ``
     for (let i in data) {
         console.log(" Get data: ", data[i])
-        const {Title, Year, Poster, imdbID, Genre} = data[i]
+        const {Title, Year, Poster, imdbID, Type} = data[i]
         html +=
             `<div class="container parent${i++}" id="parent${i++}">
                          <button type="button" class="btn-close remove-card" id="delete" onclick="deleteMovie(event);parentNode.remove()"></button> <br>
@@ -72,7 +72,7 @@ let append = function (data) {
                         <h5 class="card-title"><p>Movie Title: ${Title}</p></h5>
                          <p>Year: ${Year}</p>
                          <p>Movie ID: ${imdbID}</p>
-                         <p>Genre: ${Genre}</p>
+                         <p>Type: ${Type}</p>
                          </div>
                          </div>
                          </div>`;
