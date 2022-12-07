@@ -8,16 +8,15 @@
 
 
 
+
     const getMovies = (search) => {
         search.preventDefault()
-        // console.log(search.target[0].value)
-        // console.log('hello')
         fetch(`https://www.omdbapi.com?apikey=${movieKey}&s=${search.target[0].value}`)
             .then(response => response.json())
             .then(function (data) {
                 console.log('data', data);
 
-                let movie = data.Search;
+                let movie = data.search;
                 let appendMovies = append(movie)
                 $('#append-movies').html(appendMovies)  //I want to take the results and place it in the div w/ ID of movies
             })
@@ -42,7 +41,7 @@
         return html
     }
 
-    let form = document.getElementById('search');
+    let form = document.getElementById('searchInput');
     form.addEventListener('submit', getMovies)
 
 
@@ -72,14 +71,8 @@
             })
 
     }
-    let inputMovie= document.getElementById('new-movie')
+    let inputMovie= document.getElementById("searchButton")
     inputMovie.addEventListener('submit', putMovie)
-
-
-
-
-
-
 
 
 
