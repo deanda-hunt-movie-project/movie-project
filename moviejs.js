@@ -19,7 +19,6 @@
 // }
 
 
-
 // $( document ).ready(function() {
 const movieKey = apikey; //
 const url = "https://stirring-vaulted-laundry.glitch.me/movies";
@@ -81,17 +80,15 @@ let append = function (data) {
     return html
 }
 
-
-
 //+++++++++++++++++++++++++++++++++++++++++++++POST ME+++++++++++++++++++++++++++++++++++++++++++++
 
-function postMovie (movie) {
+function postMovie(movie) {
     movie.preventDefault()
 //TODO: get the length of database (data)
 //     console.log("hello")
     // movie.preventDefault()
     const movieObj = {title: `${movie.target[0].value}`, body: '2'}
-    const option =   {
+    const option = {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -110,13 +107,12 @@ function postMovie (movie) {
         })
 
 }
-let post= document.getElementById('new-movie')
+
+let post = document.getElementById('new-movie')
 post.addEventListener('submit', postMovie)
 
 
-
 //+++++++++++++++++++++++++++++++++++++++++++++PUT ME+++++++++++++++++++++++++++++++++++++++++++++
-
 
 
 // function putMovie (id) {
@@ -177,9 +173,6 @@ function deleteMovie(search) {
         })
 
 }
-
-
-
 
 
 //-------------------------------FETCH REQUEST LOADING ANIMATION-----------------------------------
