@@ -13,6 +13,63 @@
 
 </head>
 <body>
+<!--<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>-->
+<!--<div id="stars"></div>-->
+<!--<div id="stars2"></div>-->
+<!--<div id="stars3"></div>-->
+<!--<div id="title">-->
+<!--  <span>-->
+<!--    PURE CSS-->
+<!--  </span>-->
+<!--    <br />-->
+<!--    <span>-->
+<!--    PARALLAX PIXEL STARS-->
+<!--  </span>-->
+<!--</div>-->
+
+<!--<css-doodle>-->
+<!--    <style>-->
+<!--        @grid: 50x1 / 50vmin;-->
+<!--        :container {-->
+<!--            perspective: 23vmin;-->
+<!--        }-->
+<!--        background: @m(-->
+<!--        @r(200, 240),-->
+<!--        radial-gradient(-->
+<!--        @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d) 15%,-->
+<!--        transparent 50%-->
+<!--        ) @r(100%) @r(100%) / @r(1%, 3%) @lr no-repeat-->
+<!--        );-->
+
+<!--        @size: 80%;-->
+<!--        @place-cell: center;-->
+
+<!--        border-radius: 50%;-->
+<!--        transform-style: preserve-3d;-->
+<!--        animation: scale-up 20s linear infinite;-->
+<!--        animation-delay: calc(@i * -.4s);-->
+
+<!--        @keyframes scale-up {-->
+<!--            0% {-->
+<!--                opacity: 0;-->
+<!--                transform: translate3d(0, 0, 0) rotate(0);-->
+<!--            }-->
+<!--            10% {-->
+<!--                opacity: 1;-->
+<!--            }-->
+<!--            95% {-->
+<!--                transform:-->
+<!--                        translate3d(0, 0, @r(50vmin, 55vmin))-->
+<!--            rotate(@r(-360deg, 360deg));-->
+<!--            }-->
+<!--            100% {-->
+<!--                opacity: 0;-->
+<!--                transform: translate3d(0, 0, 1vmin);-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--</css-doodle>-->
+
 
 <!--FORM-->
 <form>
@@ -25,10 +82,21 @@
 
 </form>
 <form id="new-movie">
-    <h1>POST</h1>
+    <h1>SEARCH</h1>
     <input type="text" class="form-control" id="input-movie" placeholder="What is the name of the movie?">
     <button type="submit" id="btn-1"></button>
 </form>
+
+<!--<div class="container">-->
+<!--    &lt;!&ndash;Text area to give input&ndash;&gt;-->
+<!--    <textarea id="inputPart" placeholder="Enter dummy data..."></textarea>-->
+<!--    &lt;!&ndash;Submit Data&ndash;&gt;-->
+<!--    <button id="submitInput">Submit</button>-->
+
+<!--    <div id="loading"></div>-->
+<!--    &lt;!&ndash;Showing output&ndash;&gt;-->
+<!--    <h1 id="showOutput"></h1>-->
+<!--</div>-->
 
 <!--Render Movies-->
 <div class="movie-container">
@@ -45,6 +113,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 <!--CUSTOM JS SCRIPTS-->
 <script src="keys.js"></script>
 <script src="moviejs.js"></script>
