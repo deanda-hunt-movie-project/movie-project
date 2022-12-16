@@ -1,150 +1,191 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+#cards {
 
-body {
-  min-height: 100%;
-}
-
-main {
-  width: 100%;
-  min-height: 1000px;
-}
-
-header {
-  width: 100%;
-  height: 72px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #000000;
-}
 
+  justify-content: space-evenly;
 
-.container {
-    max-width: 550px;
-    margin: auto;
-    padding: 0 1rem;
-}
-textarea {
-    width: 100%;
-    height: 8rem;
-}
-button {
-    margin: 2rem 0;
-    width: 100%;
-    padding: 8px 0;
-    cursor: pointer;
-}
-
-/* creating css loader */
-
-/*#loading {*/
-/*    width: 2rem;*/
-/*    height: 2rem;*/
-/*    border: 5px solid #f3f3f3;*/
-/*    border-top: 6px solid #9c41f2;*/
-/*    border-radius: 100%;*/
-/*    margin: auto;*/
-/*    visibility: hidden;*/
-/*    animation: spin 1s infinite linear;*/
-/*}*/
-/*#loading.display {*/
-/*    visibility: visible;*/
-/*}*/
-/*@keyframes spin {*/
-/*    from {*/
-/*        transform: rotate(0deg);*/
-/*    }*/
-/*    to {*/
-/*        transform: rotate(360deg);*/
-/*    }*/
-/*}*/
-
-.navbar_cont {
-  width: 250px;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar_ul {
-  width: 250px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.menu_cont {
-  display: none;
-}
-
-
-.navbar{
-  background-color: silver;
-}
-#submit-btn{
-  border: solid 2px blue;
-  background-color: lightskyblue;
-  height: 2em;
-}
-
-#search{
-  height: 2em;
-}
-
-h1{
-  display: flex;
-  justify-content: center;
-  font-family: "Times New Roman", "sans-serif";
-  font-weight: bold;
-}
-
-.card{
-  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 10px;
-  font-weight: bolder;
-  color: #141618;
 
 }
-.container{
-  margin: 5em;
+
+
+
+.spinner {
+
+  width: 64px;
+
+  height: 64px;
+
+  border: 8px solid;
+
+  border-color: black transparent black transparent;
+
+  border-radius: 50%;
+
+  animation: spin-anim 1.2s linear infinite;
+
 }
 
-video{
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+
+
+#loader-container {
+
+  width: 100%;
+
+  height: calc(100vh - 7em);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
   position: fixed;
+
+  top:7em;
+
+  background: #FFF;
+
+  z-index: 1;
+
+}
+
+
+
+@keyframes spin-anim {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(360deg); }
+
+}
+
+
+
+h1 {
+
+  text-align: center;
+
+  padding: 1em;
+
+}
+
+
+
+.switch {
+
+  position: relative;
+
+  display: inline-block;
+
+  width: 3.2em;
+
+  height: 1.75em;
+
+}
+
+
+
+.switch input {
+
+  opacity: 0;
+
+  width: 0;
+
+  height: 0;
+
+}
+
+
+
+.slider {
+
+  position: absolute;
+
+  cursor: pointer;
+
   top: 0;
+
   left: 0;
-  z-index: -1;
-}
 
-.navbar{
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 10px;
-  font-weight: bolder;
-  color: #141618;
-}
-.navbar-brand{
-  color: black;
+  right: 0;
+
+  bottom: 0;
+
+  background-color: #ccc;
+
+  -webkit-transition: .4s;
+
+  transition: .4s;
+
 }
 
 
 
+.slider:before {
+
+  position: absolute;
+
+  content: "";
+
+  height: 1.25em;
+
+  width: 1.25em;
+
+  left: 4px;
+
+  bottom: 4px;
+
+  background-color: white;
+
+  -webkit-transition: .4s;
+
+  transition: .4s;
+
+}
+
+
+
+input:checked + .slider {
+
+  background-color: skyblue;
+
+}
+
+
+
+input:focus + .slider {
+
+  box-shadow: 0 0 1px #2196F3;
+
+}
+
+
+
+input:checked + .slider:before {
+
+  -webkit-transform: translateX(1.25em);
+
+  -ms-transform: translateX(1.25em);
+
+  transform: translateX(1.25em);
+
+}
+
+
+
+/* Rounded sliders */
+
+.slider.round {
+
+  border-radius: 34px;
+
+}
+
+
+
+.slider.round:before {
+
+  border-radius: 50%;
+
+}
